@@ -1,0 +1,97 @@
+:root {
+    --text: #cfd4d3;
+    --primary: #4ea588;
+    --secondary: #191919;
+    --accent: #;
+    --background: #060908;
+}
+
+html {
+    scroll-behavior: smooth !important;
+    font-size: 100%;
+    background: var(--background);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: var(--text);
+}
+
+body {
+    position: relative;
+    width: 100lvw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 10rem;
+    color: var(--secondary);
+    user-select: none;
+}
+
+h2 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3,
+    h4 {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 1536px) {
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+}
