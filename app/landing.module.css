@@ -15,7 +15,7 @@
     width: 100%;
 
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0, 2);
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -105,8 +105,27 @@
     height: 100%;
 }
 
+.mobileGrad {
+    display: none;
+    position: fixed;
+    width: 100lvw;
+    height: 100lvh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.mobileGrad ellipse {
+    rx: 80lvw;
+    ry: 80lvw;
+    cx: 0;
+}
+
 @media (max-width: 768px) {
     .cursor {
         display: none;
+    }
+    .mobileGrad {
+        display: block;
     }
 }

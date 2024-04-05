@@ -24,7 +24,6 @@ export default function ScrollingText() {
             } else {
                 setCur((cur + 1) % text.length)
             }
-            console.log(hover)
         }, 1500)
         return () => clearInterval(scroll)
     }, [cur, hover])

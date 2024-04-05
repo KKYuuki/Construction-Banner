@@ -65,3 +65,48 @@ export function CursorGrad({ className }: { className?: string }) {
         </motion.svg>
     )
 }
+
+export function MobileGrad({ className }: { className?: string }) {
+    return (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            version='1.1'
+            viewBox='0 0 100% 100%'
+            opacity='0.6'
+            className={className}
+        >
+            <defs>
+                <filter
+                    id='bbblurry-filter'
+                    x='-100%'
+                    y='-100%'
+                    width='400%'
+                    height='400%'
+                    filterUnits='objectBoundingBox'
+                    primitiveUnits='userSpaceOnUse'
+                    colorInterpolationFilters='sRGB'
+                >
+                    <feGaussianBlur
+                        stdDeviation='94'
+                        x='0%'
+                        y='0%'
+                        width='100%'
+                        height='100%'
+                        in='SourceGraphic'
+                        edgeMode='none'
+                        result='blur'
+                    ></feGaussianBlur>
+                </filter>
+            </defs>
+            <g filter='url(#bbblurry-filter)'>
+                <ellipse
+                    rx='300'
+                    ry='250'
+                    cx='400'
+                    cy='400'
+                    fill='#4EA588'
+                />
+            </g>
+        </svg>
+    )
+}

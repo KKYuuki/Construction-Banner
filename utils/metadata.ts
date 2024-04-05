@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export default function consMeta({
     title = process.env.SITE_NAME || 'Under Construction',
-    description = 'This site is under development by DEVGO Studio. Please come back later. For more information, contact us at contact@devgo.studio',
+    description = process.env.SITE_DESC || 'This site is under development by DEVGO Studio. Please come back later. For more information, contact us at contact@devgo.studio',
     image = '/banner.webp',
     icons = '/icon.webp',
     noIndex = false,

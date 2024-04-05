@@ -1,5 +1,5 @@
 "use client"
-import { CursorGrad } from "@/utils/assets"
+import { CursorGrad, MobileGrad } from "@/utils/assets"
 import styles from "./landing.module.css"
 import { motion } from "framer-motion"
 import ScrollingText from "@/components/ScrollingText"
@@ -69,6 +69,7 @@ export default function LandingPage() {
                 </motion.div>
                 <div className={styles.bg_noise} />
                 <CursorGrad className={styles.cursor} />
+                <MobileGrad className={styles.mobileGrad} />
             </section>
         </>
     )

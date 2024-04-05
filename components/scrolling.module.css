@@ -29,6 +29,10 @@
     width: 100%;
 }
 
+.words > h3 {
+    text-align: left;
+}
+
 @media (max-width: 1536px) {
     
 }
